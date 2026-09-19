@@ -39,12 +39,12 @@ $$
 存在自然双射
 
 $$
-\operatorname{Nat}(yA,F)\cong F(A),
+\mathop{\mathrm{Nat}}\nolimits(yA,F)\cong F(A),
 \qquad
-\alpha\longmapsto\alpha_A(\operatorname{id}_A).
+\alpha\longmapsto\alpha_A(\mathop{\mathrm{id}}\nolimits_A).
 $$
 
-左边是从可表预层 $yA$ 到 $F$ 的自然变换集合。方向是“从可表预层出发”，不能随意交换为 $\operatorname{Nat}(F,yA)$。
+左边是从可表预层 $yA$ 到 $F$ 的自然变换集合。方向是“从可表预层出发”，不能随意交换为 $\mathop{\mathrm{Nat}}\nolimits(F,yA)$。
 
 这个式子说：给出一整族与所有测试变化相容的函数 $\alpha_X$，所需信息恰好等于 $F(A)$ 中的一个元素。下面直接写出逆映射，并证明它工作。
 
@@ -76,8 +76,8 @@ $$
 再把它放回引理的评价映射：
 
 $$
-\alpha^a_A(\operatorname{id}_A)
-=F(\operatorname{id}_A)(a)=a.
+\alpha^a_A(\mathop{\mathrm{id}}\nolimits_A)
+=F(\mathop{\mathrm{id}}\nolimits_A)(a)=a.
 $$
 
 因此从元素出发再评价，会回到原元素。
@@ -87,7 +87,7 @@ $$
 反过来，给定自然变换 $\alpha:yA\Rightarrow F$，令
 
 $$
-a=\alpha_A(\operatorname{id}_A).
+a=\alpha_A(\mathop{\mathrm{id}}\nolimits_A).
 $$
 
 对任意 $f:X\to A$，自然性给出交换方形：
@@ -100,17 +100,17 @@ $$
 \end{array}
 $$
 
-把左上角元素 $\operatorname{id}_A$ 送到右下角，两条路径相等，所以
+把左上角元素 $\mathop{\mathrm{id}}\nolimits_A$ 送到右下角，两条路径相等，所以
 
 $$
 \alpha_X(f)
-=F(f)(\alpha_A(\operatorname{id}_A))
+=F(f)(\alpha_A(\mathop{\mathrm{id}}\nolimits_A))
 =F(f)(a).
 $$
 
 这说明 $\alpha=\alpha^a$。两方向互逆，双射证明完成。证明里真正发挥力量的是对每个 $f$ 的自然性，而不是某种额外的“整体直觉”。
 
-双射对 $F$ 自然：给 $\beta:F\Rightarrow G$，$\beta\circ\alpha$ 对应的元素是 $\beta_A(a)$。它也对 $A$ 自然：给 $u:A\to B$，从 $\operatorname{Nat}(yB,F)$ 预复合 $yu:yA\Rightarrow yB$，对应 $F(u):F(B)\to F(A)$。这也再次核对了反变方向。
+双射对 $F$ 自然：给 $\beta:F\Rightarrow G$，$\beta\circ\alpha$ 对应的元素是 $\beta_A(a)$。它也对 $A$ 自然：给 $u:A\to B$，从 $\mathop{\mathrm{Nat}}\nolimits(yB,F)$ 预复合 $yu:yA\Rightarrow yB$，对应 $F(u):F(B)\to F(A)$。这也再次核对了反变方向。
 
 ## 6. 一个能全部数完的例子
 
@@ -123,18 +123,18 @@ $$
 先看 $y0$：
 
 $$
-(y0)(0)=\{\operatorname{id}_0\},\qquad (y0)(1)=\varnothing.
+(y0)(0)=\{\mathop{\mathrm{id}}\nolimits_0\},\qquad (y0)(1)=\varnothing.
 $$
 
-自然变换 $y0\Rightarrow F$ 的 0 分量可以把 $\operatorname{id}_0$ 送到 $a$ 或 $b$；1 分量是空集出发的唯一函数。自然性在空域上自动成立，因此共有两个自然变换，对应 $F(0)$ 的两个元素。
+自然变换 $y0\Rightarrow F$ 的 0 分量可以把 $\mathop{\mathrm{id}}\nolimits_0$ 送到 $a$ 或 $b$；1 分量是空集出发的唯一函数。自然性在空域上自动成立，因此共有两个自然变换，对应 $F(0)$ 的两个元素。
 
 再看 $y1$：
 
 $$
-(y1)(0)=\{h\},\qquad(y1)(1)=\{\operatorname{id}_1\}.
+(y1)(0)=\{h\},\qquad(y1)(1)=\{\mathop{\mathrm{id}}\nolimits_1\}.
 $$
 
-1 分量只能把 $\operatorname{id}_1$ 送到 $u$。自然性随即迫使 0 分量把 $h$ 送到 $F(h)(u)=a$。所以恰有一个自然变换，对应 $F(1)$ 的唯一元素。
+1 分量只能把 $\mathop{\mathrm{id}}\nolimits_1$ 送到 $u$。自然性随即迫使 0 分量把 $h$ 送到 $F(h)(u)=a$。所以恰有一个自然变换，对应 $F(1)$ 的唯一元素。
 
 这展示了自然性如何删掉原本看似可以自由选择的分量值。
 
@@ -143,7 +143,7 @@ $$
 在引理中取 $F=yB$，得到
 
 $$
-\operatorname{Nat}(yA,yB)\cong\mathcal C(A,B).
+\mathop{\mathrm{Nat}}\nolimits(yA,yB)\cong\mathcal C(A,B).
 $$
 
 具体地，$u:A\to B$ 对应自然变换 $yu$，其分量把 $f:X\to A$ 送到 $u\circ f:X\to B$。
@@ -156,14 +156,14 @@ $$
 
 是充满忠实函子，称为 Yoneda 嵌入。尽管每个 $yA$ 是反变预层，对象 $A\mapsto yA$ 组成的嵌入却对 $A$ 协变。
 
-若 $yA$ 与 $yB$ 自然同构，对应的两个相反方向自然变换给出 $u:A\to B$ 和 $v:B\to A$；复合自然变换是恒等，通过上述 Hom 双射得到 $vu=\operatorname{id}_A$、$uv=\operatorname{id}_B$。所以 $A\cong B$。
+若 $yA$ 与 $yB$ 自然同构，对应的两个相反方向自然变换给出 $u:A\to B$ 和 $v:B\to A$；复合自然变换是恒等，通过上述 Hom 双射得到 $vu=\mathop{\mathrm{id}}\nolimits_A$、$uv=\mathop{\mathrm{id}}\nolimits_B$。所以 $A\cong B$。
 
 正确结论是对象由这个完整的 Hom 预层确定到同构。只知道每个 $\mathcal C(X,A)$ 的基数，而丢掉前复合作用与自然性，不能直接调用这个结论。
 
 另有协变版本：对 $H:\mathcal C\to\mathbf{Set}$，
 
 $$
-\operatorname{Nat}(\mathcal C(A,-),H)\cong H(A).
+\mathop{\mathrm{Nat}}\nolimits(\mathcal C(A,-),H)\cong H(A).
 $$
 
 这是相反范畴上的相应结果，不应把它的 $\mathcal C(A,-)$ 与本章预层版本的 $F$ 混写。
@@ -251,9 +251,9 @@ $$
 
 **练习 1。** 在第 6 节的范畴中，存在自然变换 $y1\Rightarrow y0$ 吗？
 
-**解答。** 不存在。1 分量需要一个从 $\{\operatorname{id}_1\}$ 到空集的函数，无法定义。这与 $\mathcal C(1,0)=\varnothing$ 完全一致。
+**解答。** 不存在。1 分量需要一个从 $\{\mathop{\mathrm{id}}\nolimits_1\}$ 到空集的函数，无法定义。这与 $\mathcal C(1,0)=\varnothing$ 完全一致。
 
-**练习 2。** 能否由 Yoneda 写 $\operatorname{Nat}(F,yA)\cong F(A)$？
+**练习 2。** 能否由 Yoneda 写 $\mathop{\mathrm{Nat}}\nolimits(F,yA)\cong F(A)$？
 
 **解答。** 不能。引理分类的是从可表函子出发的自然变换；任意交换方向一般没有这条结论。连其显式逆映射 $f\mapsto F(f)(a)$ 都不再具有所需类型。
 
